@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz – Gestão Documental</title>
+</head>
+<body>
+
+  <h1>🎮 Quiz – Gestão Documental</h1>
+
+  <!-- PERGUNTA 1 -->
+  <h3>1) O que é Gestão Documental?</h3>
+  <button onclick="responder1(0)">Arquivar documentos antigos</button><br><br>
+  <button onclick="responder1(1)">Controlar o ciclo de vida dos documentos</button><br><br>
+  <button onclick="responder1(2)">Apenas digitalizar papéis</button><br><br>
+  <button onclick="responder1(3)">Guardar documentos em nuvem</button>
+
+  <p id="resposta1"></p>
+
+  <hr>
+
+  <!-- PERGUNTA 2 -->
+  <h3>2) Qual é a primeira fase do ciclo de vida do documento?</h3>
+  <button onclick="responder2(0)">Arquivamento</button><br><br>
+  <button onclick="responder2(1)">Eliminação</button><br><br>
+  <button onclick="responder2(2)">Produção</button><br><br>
+  <button onclick="responder2(3)">Digitalização</button>
+
+  <p id="resposta2"></p>
+
+  <!-- SCRIPT -->
+  <script>
+    function responder1(opcao) {
+      if (opcao === 1) {
+        document.getElementById("resposta1").innerHTML = "✅ Resposta correta!";
+      } else {
+        document.getElementById("resposta1").innerHTML = "❌ Resposta incorreta.";
+      }
+    }
+
+    function responder2(opcao) {
+      if (opcao === 2) {
+        document.getElementById("resposta2").innerHTML = "✅ Resposta correta!";
+      } else {
+        document.getElementById("resposta2").innerHTML = "❌ Resposta incorreta.";
+      }
+    }
+  </script>
+
+</body>
+</html>
